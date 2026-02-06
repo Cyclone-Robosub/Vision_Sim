@@ -25,6 +25,14 @@
 		{
 			"Name": "GeoReferencing",
 			"Enabled": true
+		},
+		{
+			"Name": "WaterExtras",
+			"Enabled": true
+		},
+		{
+			"Name": "Water",
+			"Enabled": true
 		}
 	]
 }
