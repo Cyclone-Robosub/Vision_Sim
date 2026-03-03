@@ -40,6 +40,10 @@
 		{
 			"Name": "MathWorksSimulation",
 			"Enabled": true
+		},
+		{
+			"Name": "CameraCalibration",
+			"Enabled": true
 		}
 	]
 }
