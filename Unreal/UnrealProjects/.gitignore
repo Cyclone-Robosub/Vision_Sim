@@ -8,7 +8,8 @@
 /EllingtonPoolSim/Binaries/
 /EllingtonPoolSim/Intermediate/
 
-/SimulinkCoSimulation/slprj
+/SimulinkCoSimulation/slprj/
+/SimulinkCoSimulation/EllingtonPoolSim/Saved/AutoSaves/
 /SimulinkCoSimulation/EllingtonPoolSim/.vs/
 /SimulinkCoSimulation/EllingtonPoolSim/Backup/
 /SimulinkCoSimulation/EllingtonPoolSim/Binaries/
