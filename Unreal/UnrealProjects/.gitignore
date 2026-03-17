@@ -2,11 +2,13 @@
 /SimulinkUnrealPluginTutorial/UnrealEnvironment/Backup/
 /SimulinkUnrealPluginTutorial/UnrealEnvironment/Binaries/
 /SimulinkUnrealPluginTutorial/UnrealEnvironment/Intermediate/
+/SimulinkUnrealPluginTutorial/UnrealEnvironment/Saved/
 
 /EllingtonPoolSim/.vs/
 /EllingtonPoolSim/Backup/
 /EllingtonPoolSim/Binaries/
 /EllingtonPoolSim/Intermediate/
+/EllingtonPoolSim/Saved/
 
 /SimulinkCoSimulation/slprj/
 /SimulinkCoSimulation/EllingtonPoolSim/Saved/
