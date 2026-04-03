@@ -2803,23 +2803,3 @@ LogConfig: Set CVar [[r.Shadow.DetectVertexShaderLayerAtRuntime:1]]
 
 
 [2026.04.01-02.23.58:987][342]LogWindows: Windows GetLastError: The operation completed successfully. (0)
-[2026.04.01-02.24.04:025][342]LogWindows: Error: === Critical error: ===
-[2026.04.01-02.24.04:025][342]LogWindows: Error: 
-[2026.04.01-02.24.04:025][342]LogWindows: Error: Assertion failed: Tasks.OcclusionCull.IsCompleted() [File:D:\build\++UE5\Sync\Engine\Source\Runtime\Renderer\Private\SceneVisibilityPrivate.h] [Line: 317] 
-[2026.04.01-02.24.04:025][342]LogWindows: Error: 
-[2026.04.01-02.24.04:025][342]LogWindows: Error: 
-[2026.04.01-02.24.04:025][342]LogWindows: Error: 
-[2026.04.01-02.24.04:025][342]LogWindows: Error: [Callstack] 0x00007ffbcffd97c9 UnrealEditor-Renderer.dll!UnknownFunction []
-[2026.04.01-02.24.04:025][342]LogWindows: Error: [Callstack] 0x00007ffbcf20987d UnrealEditor-Renderer.dll!UnknownFunction []
-[2026.04.01-02.24.04:025][342]LogWindows: Error: [Callstack] 0x00007ffbcff7e34d UnrealEditor-Renderer.dll!UnknownFunction []
-[2026.04.01-02.24.04:025][342]LogWindows: Error: [Callstack] 0x00007ffbcff31f7a UnrealEditor-Renderer.dll!UnknownFunction []
-[2026.04.01-02.24.04:025][342]LogWindows: Error: [Callstack] 0x00007ffbcff540f9 UnrealEditor-Renderer.dll!UnknownFunction []
-[2026.04.01-02.24.04:025][342]LogWindows: Error: [Callstack] 0x00007ffbcff5f9d8 UnrealEditor-Renderer.dll!UnknownFunction []
-[2026.04.01-02.24.04:025][342]LogWindows: Error: [Callstack] 0x00007ffcbbd21c9f UnrealEditor-Core.dll!UnknownFunction []
-[2026.04.01-02.24.04:025][342]LogWindows: Error: [Callstack] 0x00007ffcbbd222ae UnrealEditor-Core.dll!UnknownFunction []
-[2026.04.01-02.24.04:025][342]LogWindows: Error: [Callstack] 0x00007ffcc8c3697b UnrealEditor-RenderCore.dll!UnknownFunction []
-[2026.04.01-02.24.04:025][342]LogWindows: Error: [Callstack] 0x00007ffcc8c3e594 UnrealEditor-RenderCore.dll!UnknownFunction []
-[2026.04.01-02.24.04:025][342]LogWindows: Error: [Callstack] 0x00007ffcbc314e32 UnrealEditor-Core.dll!UnknownFunction []
-[2026.04.01-02.24.04:025][342]LogWindows: Error: [Callstack] 0x00007ffcbc308667 UnrealEditor-Core.dll!UnknownFunction []
-[2026.04.01-02.24.04:025][342]LogWindows: Error: [Callstack] 0x00007ffd6e78e8d7 KERNEL32.DLL!UnknownFunction []
-[2026.04.01-02.24.04:025][342]LogWindows: Error: 
