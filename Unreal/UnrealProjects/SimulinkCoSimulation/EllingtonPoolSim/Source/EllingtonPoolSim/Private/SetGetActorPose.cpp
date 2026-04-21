@@ -27,7 +27,7 @@ void ASetGetActorPose::Sim3dSetup()
 void ASetGetActorPose::Sim3dStep(float DeltaSeconds)
 {
     unsigned int numElements = 6;
-    float array[6];
+    float array[6] = {-10000, -10000, -10000, -10000, -10000, -10000};
     int statusR = ReadSimulation3DMessage(SignalReader, sizeof(float) * numElements, array);
     FVector newLocation;
     newLocation.X = array[0];

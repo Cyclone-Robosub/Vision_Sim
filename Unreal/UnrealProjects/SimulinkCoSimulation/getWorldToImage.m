@@ -1,16 +1,32 @@
 
-function r = getWorldToImage(p, cameraPos, stereoParams)
+function r = getWorldToImage(p, cameraPos, K, d_Coef)
     cameraExt = getCameraExtrinsic(cameraPos);
-    k = stereoParams.CameraParameters1.K;
+    k = K;
     cameraInt = zeros(4,4);
     cameraInt(1:3, 1:3) = k(1:3, 1:3);
-    cameraMatrix = cameraInt*cameraExt;
     p = transpose(p);
-    rUnDistorted = cameraMatrix * p;
-    r = rUnDistorted;
+    cameraMatrix = cameraInt*cameraExt;
+    r_Un = cameraMatrix * p;
+    r_Un = r_Un/r_Un(3);
+    
+    r = distortR(r_Un, d_Coef);
 end
 
-
+function distortedR = distortR(rU, d_Coef)
+    k1 = d_Coef(1);
+    k2 = d_Coef(2);
+    p1 = d_Coef(3);
+    p2 = d_Coef(4);
+    k3 = d_Coef(5);
+    x = rU(1);
+    y = rU(2);
+    r = (x^2 + y^2)^0.5;
+    rDistort = (1 + k1 * r^2 + k2 * r^4 + k3 * r^6);
+    x_Distort = x * rDistort + 2 * p1 * x * y + p2 * (r^2 + 2 * x ^ 2);
+    y_Distort = y * rDistort + 2 * p2 * x * y + p1 * (r^2 + 2 * y ^ 2);
+    distortedR = [x_Distort, y_Distort];
+end
+    
 function cameraExt = getCameraExtrinsic(cameraPos)
 
     %Roll Matrix:
